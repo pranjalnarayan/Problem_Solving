@@ -7,9 +7,9 @@ const maxSubArray = arr => {
 
 	for(let i = 1, len = arr.length; i < len; i++) {
 		let curNum = arr[i];
-        curSum = max(curNum, (curNum + curSum));
+        	curSum = max(curNum, (curNum + curSum));
 		curSum > maxSum && (maxSum = curSum);
-    }
+    	}
 
 	return maxSum;
 }
